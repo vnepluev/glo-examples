@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "proxima_novaregular";
+  src: url("../fonts/proximanova-webfont.woff2") format("woff2"),
+    url("../fonts/proximanova-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima_nova_condensedbold";
+  src: url("../fonts/proximanovabold-webfont.woff2") format("woff2"),
+    url("../fonts/proximanovabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima_novalight";
+  src: url("../fonts/proximanovalight-webfont.woff2") format("woff2"),
+    url("../fonts/proximanovalight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.wrapper {
+  justify-content: center;
+}
+
+h1 {
+  font-family: "proxima_novaregular", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin: 85px 0 113px 0;
+}
+
+.products {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+}
+
+.price__img {
+  margin-bottom: 14px;
+}
+
+.price__name {
+  font-family: "proxima_novalight", Arial, Helvetica, sans-serif;
+  margin: 0 0 14px 0;
+  font-size: 16px;
+}
+
+.price__price {
+  font-family: "proxima_nova_condensedbold", Arial, Helvetica, sans-serif;
+  margin: 0 0 23px 0;
+  font-size: 18px;
+}
+
+.price__btn {
+  display: inline-block;
+  text-align: center;
+  font-family: "proxima_nova_condensedbold", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 1px solid #23bac1;
+  color: #23bac1;
+  width: 80%;
+  padding: 18px;
+  text-decoration: none;
+}
