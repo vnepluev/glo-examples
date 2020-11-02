@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Анкета пользователя</legend>
+        <label for="user-name">Введите имя</label>
+        <input
+          id="user-name"
+          name="user-name"
+          type="text"
+          placeholder="Например, Владимир"
+          value="Валесилий"
+          required
+          maxlength="20"
+          autocomplete="on"
+          autofocus
+        /><br />
+
+        <label for="#">Телефон:</label>
+        <input type="tel" pattern="" placeholder="+7(905)222-40-00" />
+        <br />
+        <label for="#">Введите e-mail:</label>
+        <input type="mailto:1@mail.ru" required />
+        <input type="submit" value="Отправить" />
+
+        <label for="#">Любимое блюдо</label><br /><br />
+
+        <input id="pizza" type="radio" name="food" />
+        <label for="pizza">пицца</label><br />
+
+        <input id="potato" type="radio" name="food" />
+        <label for="potato">картошка</label><br />
+
+        <input id="beer" type="radio" name="food" />
+        <label for="beer">пиво</label><br /><br />
+
+        <label for="date">Введите дату</label>
+        <input type="date" name="date" id="date" /><br /><br />
+
+        <input type="file" name="file" id="file" multiple /><br /><br />
+
+        <input type="password" name="pass" id="pass" /><br /><br />
+
+        <input type="range" /><br /><br />
+
+        <!-- развернутый комментарий -->
+        <textarea name="" id="" cols="30" rows="10"></textarea><br /><br />
+
+        <!-- выпадающий список -->
+        <select name="choice" id="choice" size="3" multiple>
+          <!-- size=2 - сколько можно видеть элементов -->
+          <option value="Москва" disabled>Москва</option>
+          <option value="Питер" selected>Питер</option>
+          <option value="Казань">Казань</option>
+        </select>
+
+        <input type="reset" value="Сбросить" />
+        <br /><br />
+        <input type="submit" value="отправить данные input" />
+        <button type="submit">отправить данные button</button>
+      </fieldset>
+      <fieldset>
+        <legend>Данные пользователя</legend>
+      </fieldset>
+    </form>
+  </body>
+</html>
