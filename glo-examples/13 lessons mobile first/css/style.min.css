@@ -64,7 +64,9 @@ img {
 }
 
 .section-title {
+  max-width: 542px;
   font-size: 24px;
+  text-align: center;
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
 }
@@ -85,6 +87,10 @@ img {
 .input:focus {
   -webkit-border-radius: 0;
           border-radius: 0;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -310,6 +316,7 @@ img {
   width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -352,5 +359,178 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+}
+
+.modal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 110%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 490px;
+  width: 90%;
+  min-height: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.portfolio {
+  background: #F5F5F5 url("../img/portfolio/portfolio-pattern.png") repeat-y center left;
+  -webkit-background-size: 50% 50%;
+          background-size: 50%;
+}
+
+.portfolio__title {
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+.price__title {
+  margin: auto;
+  margin-bottom: 58px;
+}
+
+.price__subtitle {
+  margin-bottom: 59px;
+  text-align: center;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  border: #E8E8E8 1px solid;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover .card__image:before {
+  opacity: 1;
+}
+
+.card__link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+
+.card__link:hover:after {
+  height: 12px;
+}
+
+.card__link:after {
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  text-align: center;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(bottom, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(bottom, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card__img {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: auto;
   }
 }

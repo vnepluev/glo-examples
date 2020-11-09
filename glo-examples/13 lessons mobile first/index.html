@@ -9,7 +9,11 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="css/style.min.css" />
+    <!-- Подключаем стиль для анимации  -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
   </head>
+
   <body>
     <nav class="navbar">
       <div class="container">
@@ -24,7 +28,9 @@
                 >+7(905)022-40-00</a
               >
             </div>
-            <button class="button navbar__button">Перезвоните мне</button>
+            <button class="button navbar__button" id="button">
+              Перезвоните мне
+            </button>
           </div>
         </div>
       </div>
@@ -113,6 +119,167 @@
           </div>
         </div>
       </section>
+
+      <section class="section portfolio">
+        <div class="container">
+          <h2 class="section-title portfolio__title">
+            Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и
+            домах
+          </h2>
+          <div class="slider">
+            <div class="slider__items">
+              <img
+                class="slider__image"
+                src="img/portfolio/portfolio1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider__items">
+              <img
+                class="slider__image"
+                src="img/portfolio/portfolio2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider__items">
+              <img
+                class="slider__image"
+                src="img/portfolio/portfolio3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider__items">
+              <img
+                class="slider__image"
+                src="img/portfolio/portfolio1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider__items">
+              <img
+                class="slider__image"
+                src="img/portfolio/portfolio2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider__items">
+              <img
+                class="slider__image"
+                src="img/portfolio/portfolio3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Стрелки навигации -->
+          <div class="arrows portfolio__arrows">
+            <div class="arrows__left">
+              <img src="img/portfolio/left-arrow.png" alt="" />
+            </div>
+            <div class="arrows__right">
+              <img src="img/portfolio/right-arrow.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 секция карточки товаров -->
+      <section class="section price">
+        <div class="container">
+          <h2 class="section-title price__title">
+            У нас очень гибкая система скидок на комплексные работы!
+          </h2>
+          <span class="section-subtitle price__subtitle"
+            >Прайс на наши услуги</span
+          >
+
+          <div class="cards">
+            <div
+              class="card price__card wow animate__animated animate__fadeInDown"
+              data-wow-duration="2s"
+            >
+              <div class="card__image">
+                <img class="card__img" src="img/price/price1.jpg" alt="" />
+              </div>
+              <div class="card__text">
+                <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+                <a href="#" class="card__link">Узнать цены</a>
+              </div>
+            </div>
+            <div
+              class="card price__card wow animate__animated animate__fadeInDown"
+            >
+              <div class="card__image">
+                <img class="card__img" src="img/price/price2.jpg" alt="" />
+              </div>
+              <div class="card__text">
+                <h4 class="card__title">Ремонт комнат и квартир</h4>
+                <a href="#" class="card__link">Узнать цены</a>
+              </div>
+            </div>
+            <div
+              class="card price__card wow animate__animated animate__fadeInDown"
+            >
+              <div class="card__image">
+                <img class="card__img" src="img/price/price3.jpg" alt="" />
+              </div>
+              <div class="card__text">
+                <h4 class="card__title">Отделка офисных помещений</h4>
+                <a href="#" class="card__link">Узнать цены</a>
+              </div>
+            </div>
+            <div
+              class="card price__card wow animate__animated animate__fadeInDown"
+            >
+              <div class="card__image">
+                <img class="card__img" src="img/price/price4.jpg" alt="" />
+              </div>
+              <div class="card__text">
+                <h4 class="card__title">Ремонт в новостройках</h4>
+                <a href="#" class="card__link">Узнать цены</a>
+              </div>
+            </div>
+            <div
+              class="card price__card wow animate__animated animate__fadeInDown"
+            >
+              <div class="card__image">
+                <img class="card__img" src="img/price/price5.jpg" alt="" />
+              </div>
+              <div class="card__text">
+                <h4 class="card__title">Ремонт кухонь</h4>
+                <a href="#" class="card__link">Узнать цены</a>
+              </div>
+            </div>
+            <div class="card price__card wow animate__animated animate__bounce">
+              <div class="card__image">
+                <img class="card__img" src="img/price/price6.jpg" alt="" />
+              </div>
+              <div class="card__text">
+                <h4 class="card__title">Ремонт дач и коттеджей</h4>
+                <a href="#" class="card__link">Узнать цены</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Модальное всплывающее окно -->
+
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <h4 class="modal-dialog__title">Всплывающее окно</h4>
+      </div>
+    </div>
+
+    <!-- Подключаем скрипт модального окна -->
+    <!-- <script src="js/main.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
